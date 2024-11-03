@@ -1,0 +1,56 @@
+/********************
+****    Header    ****
+********************/
+.my-header {
+    position: fixed;
+    top: 0;
+    left: 260px;
+    width: calc(100% - 260px);
+    height: 60px;
+    background-color: rgb(57, 54, 54);
+}
+
+
+
+
+
+
+
+/********************
+****    Sidebar   ****
+********************/
+.my-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    max-width: 260px;
+    width: 260px;
+    background-color: var(--navy);
+}
+
+
+
+
+
+/**********************
+****    Main Body  ****
+**********************/
+.main-body {
+    margin-top: 65px;
+    margin-left: 260px;
+    width: calc(100% - 260px);
+    background-color: var(--white);
+    height: 1400px;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    height: 8px;
+    background-color: var(--white-off2);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--dark-gray);
+    /* border: 1px solid var(--white); */
+}
