@@ -1,5 +1,11 @@
 @import './variable.css';
 @import './customClass.css';
 
+
+/* ALL Component */
+@import './component/header.css';
+@import './component/sidebar.css';
+
 /* _________ All Pages  _________ */
 @import './pages/index.css';
+@import './pages/login.css'

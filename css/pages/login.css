@@ -1,0 +1,16 @@
+.login-page {
+    height: 100dvh;
+    width: 100%;
+    background-color: var(--white);
+}
+
+.login-area {
+    max-width: 400px;
+    padding: 25px 20px;
+    box-shadow: var(--shadow-2);
+    border: 1px solid var(--white-off);
+}
+
+.login-area .head img {
+    width: 125px;
+}

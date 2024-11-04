@@ -6,8 +6,8 @@
     top: 0;
     left: 260px;
     width: calc(100% - 260px);
-    height: 60px;
-    background-color: rgb(57, 54, 54);
+    height: 65px;
+    background-image: var(--gradient-1);
 }
 
 
@@ -45,9 +45,10 @@
 }
 
 body::-webkit-scrollbar {
-    width: 12px;
+    width: 10px;
     height: 8px;
     background-color: var(--white-off2);
+    border-left: 1px solid var(--light-gray);
 }
 
 body::-webkit-scrollbar-thumb {
