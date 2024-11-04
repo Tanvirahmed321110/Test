@@ -20,40 +20,41 @@
 
 
             <!-- input frield -->
-            <div class="inputs my-mt-7">
-                <div class="input">
+            <form action="#" class="inputs my-mt-6">
+                <div class="my-input-control ">
                     <label for="emial" class="my-sub-title my-text-green">
                         Email Address
                     </label>
                     <input class="mt-1" type="email" id="emial">
+                    <p class="error-message d-none">invalid password</p>
                 </div>
 
-                <div class="input mt-3">
+                <div class="my-input-control  my-mt-3">
                     <label for="password" class="my-sub-title my-text-green">
                         Password
                     </label>
                     <input class="mt-1" type="password" id="password">
+                    <p class="error-message d-none">invalid password</p>
                 </div>
 
-                <div class="my-mt-2 my-justify-end my-d-flex remember my-gap-">
+                <div class="my-mt-2 my-justify-end my-d-flex remember ">
                     <input class="checkbox" type="checkbox" name="" id="remember">
                     <label class="my-fs-sm my-text-gray my-user-select" for="remember">Remember Me</label>
                 </div>
-            </div>
+
+                <!-- button -->
+                <div class="my-mt-4">
+                    <button class="my-btn-gradient my-gray-btn  w-100">
+                        Login
+                    </button>
+                </div>
+            </form>
 
 
-            <!-- Button -->
-            <div class="buttons my-mt-6">
-                <button class="my-btn my-gray-btn  w-100">
-                    Login
-                </button>
-
-
-                <!-- Forgot Password -->
-                <div class="bottom my-mt-4">
-                    <div class="flex-between pages my-text-right">
-                        <a class="my-text-gray my-underline" href="#">Lost your password?</a>
-                    </div>
+            <!-- Forgot Password -->
+            <div class="bottom my-mt-4">
+                <div class="flex-between pages my-text-right">
+                    <a class="my-text-gray my-underline" href="#">Lost your password?</a>
                 </div>
             </div>
 

@@ -39,10 +39,9 @@ a {
     text-decoration: none;
     display: inline-block;
     color: inherit;
-    transition: .my-2s ease-in-out;
 }
 
-a:active,
+
 button:active {
     transform: translateY(-3px);
 }
@@ -51,12 +50,14 @@ button:active {
 p {
     font-size: var(--fs-md);
     line-height: 22px;
+    margin-bottom: 0 !important;
 }
 
 img {
     display: block;
     width: 100%;
     object-fit: cover;
+    object-position: center;
 }
 
 input,
@@ -140,11 +141,11 @@ button {
 
 /*_____ Title  _____*/
 .my-title {
-    font-size: var(--fs-xl);
+    font-size: var(--fs-xxl);
     font-weight: var(--fw-700);
     line-height: 27px;
     letter-spacing: .3px;
-    color: var(--dark-blue-color);
+    color: var(--gray);
 }
 
 .my-sub-title {
@@ -156,15 +157,24 @@ button {
 }
 
 .my-input-control {
-    padding: 13px 20px;
     border-radius: 24px;
     background-color: var(--white-off-color);
     color: var(--dark-blue-color);
     letter-spacing: .15px;
 }
 
+.my-input-control.error .error-message {
+    display: block !important;
+    color: var(--red);
+    font-size: var(--fs-xs);
+}
+
+.my-input-control.error input {
+    border-color: var(--red);
+}
+
 .my-border {
-    border: 1px solid var(--white-dark-color);
+    border: 1px solid var(--white-off2);
 }
 
 .my-shadow-1 {
@@ -241,7 +251,7 @@ input[type="checkbox"]:focus {
 /*______  Button  ______*/
 .my-btn {
     cursor: pointer;
-    padding: 11px;
+    padding: 8px 14px;
     font-family: inherit;
     display: flex;
     align-items: center;
@@ -258,11 +268,6 @@ input[type="checkbox"]:focus {
     box-shadow: 0 10px 40px -14px rgba(0, 0, 0, 0.25);
 }
 
-.my-btn.my-gray-btn {
-    /* background-color: var(--gray); */
-}
-
-
 
 
 .my-btn.my-dark-btn:hover,
@@ -271,16 +276,9 @@ input[type="checkbox"]:focus {
 }
 
 
-
-
-
-
-
-
-
 /* Button Link */
 .popup-button,
-.my-btn {
+.my-btn-gradient {
     text-transform: uppercase;
     color: var(--white);
     background-size: 200% auto;
@@ -348,11 +346,11 @@ input[type="checkbox"]:focus {
 
 
 /*______  color  ______*/
-.my-white-color {
+.my-text-white {
     color: var(--white);
 }
 
-.my-dark-color {
+.my-text-dark {
     color: var(--dark);
 }
 
@@ -364,51 +362,18 @@ input[type="checkbox"]:focus {
     color: var(--green);
 }
 
-
-
-.my-dark-gray {
-    color: var(--dark-gray);
+.my-text-white-off {
+    color: var(--white-off2);
 }
 
-.my-white-off {
-    color: var(--white-off);
-}
-
-.my-color-white {
-    color: var(--white-color);
-}
-
-.my-gray-color {
-    color: var(--gray-color)
-}
-
-.my-sky-blue-color {
-    color: var(--sky-blue-color);
-}
-
-.my-medium-gray {
-    color: var(--medium-gray);
-}
-
-.my-blue-color {
-    color: var(--dark-blue-color);
-}
-
-.my-orange-color {
-    color: var(--orange-color);
-}
-
-.my-red-color {
+.my-text-red {
     color: var(--red);
 }
 
-.my-green-color {
-    color: var(--green-color);
+.my-text-green {
+    color: var(--green);
 }
 
-.my-medium-gray {
-    color: var(--medium-gray);
-}
 
 
 
@@ -865,26 +830,29 @@ input[type="checkbox"]:focus {
 
 
 /* _______   Scrollbar  _______ */
-.my-has-scrollbar {
-    padding: 5px;
-}
 
 .my-has-scrollbar::-webkit-scrollbar {
-    width: 8px;
-    /* for vertical scroll */
+    width: 0px;
+    height: 0px;
+}
+
+.my-has-scrollbar:hover::-webkit-scrollbar {
+    width: 9px;
+    /* Set desired width */
     height: 8px;
+    /* Set desired height */
+    background-color: var(--gray-off);
 }
 
 .my-has-scrollbar::-webkit-scrollbar-thumb {
     background: transparent;
-    border: 3px solid var(--white);
     border-radius: 20px;
 }
 
 .my-has-scrollbar:hover::-webkit-scrollbar-thumb {
-    background: hsl(0, 5%, 81%);
+    background-color: var(--dark-gray);
 }
 
 .my-has-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: hsl(0, 4%, 67%);
+    background: var(--gray);
 }
