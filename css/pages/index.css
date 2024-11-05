@@ -28,13 +28,78 @@
     transform: rotate(180deg);
 }
 
-.profile-image {
+.my-header .profile-image {
     width: 54px;
     height: 54px;
     border-radius: 50%;
     border: 1px solid rgba(125, 125, 125, 0.74);
     padding: 2px;
 }
+
+
+/* Custom CSS to hide dropdown caret */
+.no-caret::after {
+    display: none;
+}
+
+/*_______  Notification  _________*/
+.notification-items .profile-image {
+    width: 48px;
+    height: 48px;
+}
+
+.my-dropdown.notification-dropdown {
+    width: 300px;
+}
+
+.my-header .notification-items li {
+    border-bottom: 1px solid var(--white-off);
+    position: relative;
+    padding: 0 15px;
+}
+
+
+/* animation and new base */
+.my-header .notification-items li .new {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    border-radius: 3px;
+    padding: 0px 4px;
+    color: var(--white);
+    background-color: var(--red);
+    font-size: var(--fs-xs);
+    animation: on-off 2s linear infinite alternate;
+    transform-origin: center
+}
+
+.my-header .notification-items li:hover {
+    background-color: var(--white-off);
+}
+
+/* scroll bar change color */
+.my-header .my-dropdown.my-has-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--sky);
+}
+
+.my-header .my-dropdown.my-has-scrollbar:hover::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* notification base */
+.base {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-top: -16px;
+    margin-left: 30px;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 12px;
+    animation: top-down .5s ease-in-out infinite;
+}
+
 
 
 

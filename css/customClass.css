@@ -258,6 +258,16 @@ input[type="checkbox"]:focus {
     justify-content: center;
 }
 
+.my-btn-outline {
+    border-radius: 4px;
+    border: 1px solid var(--white-off2);
+    font-weight: var(--fw-500);
+}
+
+.my-btn-outline:hover {
+    background-color: var(--gray-off);
+}
+
 .my-btn.my-dark-btn,
 .my-btn.my-gray-btn {
     background-color: var(--dark);
@@ -283,15 +293,26 @@ input[type="checkbox"]:focus {
     color: var(--white);
     background-size: 200% auto;
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
-    background-image: linear-gradient(to right, #895cf2 0%, #faa0eed0 55%, #895cf2 100%);
+    background-image: linear-gradient(to right, #895cf2 0%, #e99addc7 55%, #7e52e6 100%);
     transition: 0.5s;
+    padding: 12px 14px;
+    font-weight: var(--fw-600);
+    font-size: var(--fs-lg);
 }
 
 .popup-button:hover,
-.my-btn:hover {
+.my-btn-gradient:hover {
     background-position: right center;
 }
 
+.my-dropdown {
+    border-radius: 4px;
+    box-shadow: var(--shadow-2);
+    border: 1px solid var(--white-off);
+    max-height: 500px;
+    overflow: auto;
+    overflow-x: hidden;
+}
 
 /*______  Display  ______*/
 .my-d-none {
@@ -358,8 +379,8 @@ input[type="checkbox"]:focus {
     color: var(--gray);
 }
 
-.my-text-green {
-    color: var(--green);
+.my-text-purple {
+    color: var(--purple);
 }
 
 .my-text-white-off {
@@ -838,9 +859,7 @@ input[type="checkbox"]:focus {
 
 .my-has-scrollbar:hover::-webkit-scrollbar {
     width: 9px;
-    /* Set desired width */
     height: 8px;
-    /* Set desired height */
     background-color: var(--gray-off);
 }
 
@@ -855,4 +874,54 @@ input[type="checkbox"]:focus {
 
 .my-has-scrollbar::-webkit-scrollbar-thumb:hover {
     background: var(--gray);
+}
+
+
+
+
+
+
+
+
+
+
+/* Animaion */
+@keyframes on-off {
+    0% {
+        opacity: 0;
+        transform: scale(.6);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(.9);
+    }
+
+    0% {
+        opacity: 0;
+        transform: scale(.9);
+    }
+}
+
+/* Animaion */
+@keyframes top-down {
+    0% {
+        transform: translateY(2px);
+    }
+
+    50% {
+        transform: translateY(-1px);
+    }
+
+    68% {
+        transform: translateY(1px);
+    }
+
+    100% {
+        transform: translateY(-1px);
+    }
+
+    0% {
+        transform: translateY(1px);
+    }
 }
