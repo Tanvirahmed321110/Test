@@ -24,7 +24,7 @@
     --purple-dark: #21243d;
     --navy: #113f67;
     --navy-2: #113657ec;
-    --blue: #38598b;
+    --blue: #496fa8;
     --sky: #a2a8d3;
     --gray-off: #d8dae1;
 
@@ -53,6 +53,7 @@
         system-ui;
 
     --gradient-1: linear-gradient(to right, #0b3958, #185a86);
+    --gradient-2: linear-gradient(to right, #11354d, #1c577e);
 
 
     /* shadow */
@@ -64,5 +65,6 @@
 
     /* _______________  bg color in section _______________ */
     --sidebar-bg: var(--navy);
-    --header-bg: var(var(var(--gradient-1)))
+    --header-bg: var(var(var(--gradient-1)));
+    --body-top: var(var(--gradient-1))
 }

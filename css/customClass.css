@@ -314,6 +314,10 @@ input[type="checkbox"]:focus {
     overflow-x: hidden;
 }
 
+.my-dropdown li {
+    width: 100%;
+}
+
 /*______  Display  ______*/
 .my-d-none {
     display: none;
@@ -404,7 +408,7 @@ input[type="checkbox"]:focus {
 }
 
 .my-bg-gray {
-    background-color: var(--light-gray);
+    background-color: var(--gray);
 }
 
 .my-bg-orange {
@@ -423,10 +427,14 @@ input[type="checkbox"]:focus {
     background-color: var(--light-yellow);
 }
 
+.my-bg-purple {
+    background-color: var(--purple);
+}
 
 .my-bg-white {
     background-color: var(--white);
 }
+
 
 
 /*______  Padding  ______*/
@@ -884,6 +892,14 @@ input[type="checkbox"]:focus {
 
 
 
+.my-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: var(--shadow-1);
+    border: 1px solid var(--white-off);
+    background-color: var(--white);
+}
 
 /* Animaion */
 @keyframes on-off {

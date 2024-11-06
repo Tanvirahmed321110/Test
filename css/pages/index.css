@@ -9,10 +9,33 @@
     height: 65px;
     background-image: var(--gradient-1);
     border-bottom: 1px solid #937e7e59;
+    z-index: 1050;
 }
 
+
+/* modal problems fixed */
+/* Modal backdrop */
+.modal-backdrop {
+    z-index: 1040 !important;
+}
+
+/* Modal itself */
+.modal {
+    z-index: 1055 !important;
+}
+
+/* Modal dialog */
+.modal-dialog {
+    z-index: 1060 !important;
+}
+
+/* Modal content */
+.modal-content {
+    z-index: 1065 !important;
+}
+
+
 .my-header .menu-btn {
-    /* border: 1px solid rgba(125, 124, 124, 0.591); */
     transition: unset;
 }
 
@@ -100,6 +123,10 @@
     animation: top-down .5s ease-in-out infinite;
 }
 
+.my-dropdown .my-flex-column {
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+}
 
 
 
@@ -193,5 +220,80 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
     background-color: var(--dark-gray);
-    /* border: 1px solid var(--white); */
+}
+
+.body-top {
+    background-image: var(--gradient-1);
+    padding-top: 25px;
+}
+
+.body-top .my-card {
+    padding: 12px 10px;
+    color: var(--green);
+}
+
+.body-top .my-card .left {
+    background-color: var(--red);
+    padding: 12px;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+}
+
+.body-top .my-card .content {
+    width: calc(100% - 66px);
+}
+
+.body-top .my-card .my-sub-title {
+    color: var(--gray);
+}
+
+
+/* filter-btn */
+.filter-wrapper {
+    padding-top: 40px !important;
+    padding-bottom: 20px;
+}
+
+.body-top .my-title {
+    margin-top: -60px;
+}
+
+.body-top .my-card {
+    transition: .2s ease-in-out;
+}
+
+.body-top .my-card:hover {
+    transition: .2s ease-in-out;
+    transform: translateY(8px);
+    background-color: var(--purple);
+    color: var(--white-off2);
+}
+
+.body-top .my-card:hover .my-sub-title {
+    color: var(--white);
+}
+
+.body-top-down {
+    /* background-image: var(--gradient-2); */
+    background-color: var(--white);
+
+}
+
+.body-top-down .my-card {
+    padding: 30px 12px;
+    transition: .5s;
+    box-shadow: var(--shadow-2);
+}
+
+
+.body-top-down .my-card:hover {
+    background-color: var(--white);
+    color: var(--gray);
+    transform: scale(.96);
+    transition: .5s;
+}
+
+.body-top-down .my-card:hover .my-sub-title {
+    color: var(--red);
 }
