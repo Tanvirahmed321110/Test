@@ -102,7 +102,7 @@
 
 /* scroll bar change color */
 .my-header .my-dropdown.my-has-scrollbar::-webkit-scrollbar-thumb {
-    background-color: var(--sky);
+    background-color: var(--dark-gray);
 }
 
 .my-header .my-dropdown.my-has-scrollbar:hover::-webkit-scrollbar {
@@ -208,7 +208,8 @@
     margin-left: 260px;
     width: calc(100% - 260px);
     background-color: var(--white);
-    height: 1400px;
+    height: auto;
+    padding-bottom: 40px;
 }
 
 body::-webkit-scrollbar {
@@ -296,4 +297,31 @@ body::-webkit-scrollbar-thumb {
 
 .body-top-down .my-card:hover .my-sub-title {
     color: var(--red);
+}
+
+
+
+/* body-middle */
+.body-middle .my-card {
+    border-top: 4px solid var(--orange);
+    padding: 20px;
+}
+
+.body-middle .payment .my-card {
+    border-top: 4px solid var(--sky);
+}
+
+.body-middle .payment-btns button {
+    border: 1px solid var(--white-off2);
+    color: var(--gray);
+    font-weight: var(--fw-500);
+}
+
+.body-middle .payment-btns button:hover {
+    border: 1px solid var(--gray);
+    background-color: var(--white-off);
+}
+
+.body-middle .payment-btns button:focus {
+    color: var(--navy-2);
 }

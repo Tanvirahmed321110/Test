@@ -152,8 +152,16 @@ button {
     font-size: var(--fs-md);
     font-weight: var(--fw-600);
     line-height: 20px;
-    letter-spacing: .my-3px;
-    color: var(--dark-blue-color);
+    letter-spacing: .3px;
+    color: var(--dark);
+}
+
+.my-title-sm {
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-600);
+    line-height: 22px;
+    letter-spacing: .3px;
+    color: var(--navy);
 }
 
 .my-input-control {
@@ -385,6 +393,10 @@ input[type="checkbox"]:focus {
 
 .my-text-purple {
     color: var(--purple);
+}
+
+.my-text-navy {
+    color: var(--navy);
 }
 
 .my-text-white-off {
