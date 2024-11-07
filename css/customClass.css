@@ -411,6 +411,9 @@ input[type="checkbox"]:focus {
     color: var(--green);
 }
 
+.my-text-gold {
+    color: var(--gold);
+}
 
 
 

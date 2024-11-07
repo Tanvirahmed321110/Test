@@ -4,10 +4,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HOME_PAGE</title>
+        <title>HSBLCO ERP||Dhaka Club Ltd.</title>
         <!-- Bootstrap CDN -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+        <!-- ICON -->
+        <link rel="icon" href="https://hsblco.com/backend/images/hsblco.png" type="image/x-icon">
         <!-- Custom CSS -->
         <link rel="stylesheet" href="./css/allCss.css">
     </head>
@@ -150,7 +151,7 @@
                                 data-bs-toggle="modal" data-bs-target="#modal-sale" title="sale"
                                 data-bs-placement="left" data-bs-title="Tooltip on left">
                                 <i class='bx bx-grid-alt'></i>
-                                <span class="ps-2 my-fs-sm">SALE</span>
+                                <span class="ps-2 my-fs-sm">POS</span>
                             </button>
 
                             <!-- Modal -->
@@ -370,10 +371,12 @@
         <aside class="my-sidebar">
 
             <!-- Logo -->
-            <div class="logo my-flex-center ">
-                <a href="index.html" class="fw-bold  my-fs-xxl my-text-white my-uppercase text-center">
-                    Logo
-                    <div class="logo-point"></div>
+            <div class="logo  ">
+                <a href="index.html"
+                    class="fw-bold  my-fs-xxl my-text-white my-uppercase text-center my-d-flex my-align-start w-100">
+                    <img src="./images/dhaka-club-removebg-preview.png" alt="Logo">
+                    <div class="logo-point">
+                    </div>
                 </a>
             </div>
 
@@ -386,7 +389,7 @@
                             <a class="sidebar-nav-item active" href="#">
                                 <div class="my-flex-center my-gap-10">
                                     <span><i class="ri-home-line"></i></span>
-                                    Home
+                                    Dashboard
                                 </div>
                                 <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
                             </a>
@@ -406,7 +409,17 @@
                             <a class="sidebar-nav-item " href="#">
                                 <div class="my-flex-center my-gap-10">
                                     <span><i class='bx bxs-contact'></i></span>
-                                    Contacts
+                                    HRM
+                                </div>
+                                <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
+                            </a>
+                        </li>
+                        <!-- single nav li -->
+                        <li class="sidebar-nav-item-li my-w-100">
+                            <a class="sidebar-nav-item " href="#">
+                                <div class="my-flex-center my-gap-10">
+                                    <span><i class='bx bxs-contact'></i></span>
+                                    Point of Sales
                                 </div>
                                 <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
                             </a>
@@ -416,7 +429,36 @@
                             <a class="sidebar-nav-item " href="#">
                                 <div class="my-flex-center my-gap-10">
                                     <span><i class='bx bxl-product-hunt'></i></span>
-                                    Products
+                                    Inventory
+                                </div>
+                                <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
+                            </a>
+                        </li>
+                        <li class="sidebar-nav-item-li my-w-100">
+                            <a class="sidebar-nav-item " href="#">
+                                <div class="my-flex-center my-gap-10">
+                                    <span><i class='bx bxl-product-hunt'></i></span>
+                                    Reservation
+                                </div>
+                                <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
+                            </a>
+                        </li>
+                        <!-- single nav li -->
+                        <li class="sidebar-nav-item-li my-w-100">
+                            <a class="sidebar-nav-item " href="#">
+                                <div class="my-flex-center my-gap-10">
+                                    <span><i class='bx bxl-product-hunt'></i></span>
+                                    Cash Cards
+                                </div>
+                                <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
+                            </a>
+                        </li>
+                        <!-- single nav li -->
+                        <li class="sidebar-nav-item-li my-w-100">
+                            <a class="sidebar-nav-item " href="#">
+                                <div class="my-flex-center my-gap-10">
+                                    <span><i class='bx bxl-product-hunt'></i></span>
+                                    MIS/CRM
                                 </div>
                                 <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
                             </a>
@@ -426,7 +468,7 @@
                             <a class="sidebar-nav-item " href="#">
                                 <div class="my-flex-center my-gap-10">
                                     <span><i class='bx bxs-up-arrow-circle'></i></span>
-                                    Sell
+                                    Accounts
                                 </div>
                                 <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
                             </a>
@@ -436,7 +478,7 @@
                             <a class="sidebar-nav-item " href="#">
                                 <div class="my-flex-center my-gap-10">
                                     <span><i class='bx bxs-down-arrow-circle'></i></span>
-                                    Purches
+                                    Attendance
                                 </div>
                                 <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
                             </a>
@@ -445,8 +487,8 @@
                         <li class="sidebar-nav-item-li my-w-100">
                             <a class="sidebar-nav-item " href="#">
                                 <div class="my-flex-center my-gap-10">
-                                    <span><i class="ri-home-line"></i></span>
-                                    Stock
+                                    <span><i class='bx bxs-down-arrow-circle'></i></span>
+                                    Payroll
                                 </div>
                                 <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
                             </a>
@@ -455,38 +497,8 @@
                         <li class="sidebar-nav-item-li my-w-100">
                             <a class="sidebar-nav-item " href="#">
                                 <div class="my-flex-center my-gap-10">
-                                    <span><i class="ri-home-line"></i></span>
-                                    Stock
-                                </div>
-                                <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
-                            </a>
-                        </li>
-                        <!-- single nav li -->
-                        <li class="sidebar-nav-item-li my-w-100">
-                            <a class="sidebar-nav-item " href="#">
-                                <div class="my-flex-center my-gap-10">
-                                    <span><i class="ri-home-line"></i></span>
-                                    Payment
-                                </div>
-                                <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
-                            </a>
-                        </li>
-                        <!-- single nav li -->
-                        <li class="sidebar-nav-item-li my-w-100">
-                            <a class="sidebar-nav-item " href="#">
-                                <div class="my-flex-center my-gap-10">
-                                    <span><i class="ri-home-line"></i></span>
-                                    Notification
-                                </div>
-                                <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
-                            </a>
-                        </li>
-                        <!-- single nav li -->
-                        <li class="sidebar-nav-item-li my-w-100">
-                            <a class="sidebar-nav-item " href="#">
-                                <div class="my-flex-center my-gap-10">
-                                    <span><i class="ri-home-line"></i></span>
-                                    HRM
+                                    <span><i class='bx bxs-down-arrow-circle'></i></span>
+                                    Email/SMS
                                 </div>
                                 <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
                             </a>
@@ -505,12 +517,33 @@
                         <li class="sidebar-nav-item-li my-w-100">
                             <a class="sidebar-nav-item " href="#">
                                 <div class="my-flex-center my-gap-10">
-                                    <span><i class='bx bx-cog'></i></span>
+                                    <span><i class="ri-home-line"></i></span>
                                     Setting
                                 </div>
                                 <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
                             </a>
                         </li>
+                        <!-- single nav li -->
+                        <li class="sidebar-nav-item-li my-w-100">
+                            <a class="sidebar-nav-item " href="#">
+                                <div class="my-flex-center my-gap-10">
+                                    <span><i class="ri-home-line"></i></span>
+                                    Support Ticket
+                                </div>
+                                <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
+                            </a>
+                        </li>
+                        <!-- single nav li -->
+                        <li class="sidebar-nav-item-li my-w-100">
+                            <a class="sidebar-nav-item " href="#">
+                                <div class="my-flex-center my-gap-10">
+                                    <span><i class="ri-home-line"></i></span>
+                                    Log Out
+                                </div>
+                                <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -525,7 +558,7 @@
                 <!-- body top -->
                 <div class="body-top">
                     <div class="head px-3 my-flex-between ">
-                        <div class=" my-title my-text-white">Welcome To Gulshan Club.</div>
+                        <div class=" my-title my-text-white">Welcome To Dhaka Club Ltd.</div>
 
                         <!-- filter -->
                         <div class="filter-wrapper">
@@ -580,7 +613,8 @@
 
                                 <!-- content -->
                                 <div class="content">
-                                    <div class="my-sub-title my-uppercase my-fw-bolder">Sales</div>
+                                    <div class="my-sub-title my-text-gold  my-uppercase my-fw-bolder">Today's Sales
+                                    </div>
 
                                     <div class="mt-2">
                                         <div><strong class="my-fw-bold">Total Sales: </strong><span><i
@@ -604,7 +638,7 @@
 
                                 <!-- content -->
                                 <div class="content">
-                                    <div class="my-sub-title my-uppercase my-fw-bolder">Sales</div>
+                                    <div class="my-sub-title my-uppercase my-fw-bolder">Today's Collections</div>
 
                                     <div class="mt-2">
                                         <div><strong class="my-fw-bold">Total Sales: </strong><span><i
@@ -623,12 +657,12 @@
 
                                 <!-- image -->
                                 <div class="left">
-                                    <img src="./images/crisis.png" alt="">
+                                    <img src="./images/today expense.png" alt="">
                                 </div>
 
                                 <!-- content -->
                                 <div class="content">
-                                    <div class="my-sub-title my-uppercase my-fw-bolder">Expense</div>
+                                    <div class="my-sub-title my-uppercase my-fw-bolder">Today's Expense</div>
 
                                     <div class="mt-2">
                                         <div><strong class="my-fw-bold">Total Expense: </strong><span><i
@@ -647,12 +681,12 @@
 
                                 <!-- image -->
                                 <div class="left">
-                                    <img src="./images/profit.png" alt="">
+                                    <img src="./images/net-profit.png" alt="">
                                 </div>
 
                                 <!-- content -->
                                 <div class="content">
-                                    <div class="my-sub-title my-uppercase my-fw-bolder">Profit</div>
+                                    <div class="my-sub-title my-uppercase my-fw-bolder">Today's Profit</div>
 
                                     <div class="mt-2">
                                         <div><strong class="my-fw-bold">Total Profit: </strong> <span><i
@@ -672,17 +706,17 @@
                         <div class="row gx-4 my-4 ">
 
                             <!-- single col -->
-                            <div class="col-sm-12 col-md-6 col-xl-4">
+                            <div class="col-sm-12 col-md-6 col-xl-3">
                                 <div class="my-card h-100 my-flex-center my-justify-start my-gap-15">
 
                                     <!-- image -->
                                     <div class="left">
-                                        <img src="./images/total sale.png" alt="">
+                                        <img src="./images/monthy-sales.png" alt="icon">
                                     </div>
 
                                     <!-- content -->
                                     <div class="content">
-                                        <div class="my-sub-title my-uppercase my-fw-bolder">Account Payable</div>
+                                        <div class="my-sub-title my-uppercase my-fw-bolder">Monthly Sales</div>
 
                                         <div class="mt-2">
                                             <div><strong class="my-fw-bold">Purchase Due: </strong><span><i
@@ -699,17 +733,17 @@
                                 </div>
                             </div>
                             <!-- single col -->
-                            <div class="col-sm-12  col-md-6 col-xl-4 ">
+                            <div class="col-sm-12  col-md-6 col-xl-3 ">
                                 <div class="my-card h-100 my-flex-center my-justify-start my-gap-15">
 
                                     <!-- image -->
                                     <div class="left my-flex-center">
-                                        <img src="./images/total sale.png" alt="">
+                                        <img src="./images/collection.png" alt="icon">
                                     </div>
 
                                     <!-- content -->
                                     <div class="content">
-                                        <div class="my-sub-title my-uppercase my-fw-bolder">Account Receivable</div>
+                                        <div class="my-sub-title my-uppercase my-fw-bolder">Monthly Collections</div>
 
                                         <div class="mt-2">
                                             <div><strong class="my-fw-bold">Sell Due: </strong><span><i
@@ -723,17 +757,42 @@
                                 </div>
                             </div>
                             <!-- single col -->
-                            <div class="col-sm-12 col-md-6 col-xl-4 ">
+                            <div class="col-sm-12 col-md-6 col-xl-3 ">
                                 <div class="my-card h-100 my-flex-center my-justify-start my-gap-10">
 
                                     <!-- image -->
                                     <div class="left">
-                                        <img src="./images/crisis.png" alt="">
+                                        <img src="./images/monthly-expense.png" alt="">
                                     </div>
 
                                     <!-- content -->
                                     <div class="content">
-                                        <div class="my-sub-title my-uppercase my-fw-bolder">Stock</div>
+                                        <div class="my-sub-title my-uppercase my-fw-bolder">Monthly Expense</div>
+
+                                        <div class="mt-2">
+                                            <div><strong class="my-fw-bold">By Sell Price: </strong><span><i
+                                                        class='bx bx-dollar'></i></span><span>0.00</span>
+                                            </div>
+                                            <div><strong class="my-fw-bold">By Purchase Price: </strong><span><i
+                                                        class='bx bx-dollar'></i></span><span>0.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- single col -->
+                            <div class="col-sm-12 col-md-6 col-xl-3 ">
+                                <div class="my-card h-100 my-flex-center my-justify-start my-gap-10">
+
+                                    <!-- image -->
+                                    <div class="left">
+                                        <img src="./images/monthly-profit.png" alt="">
+                                    </div>
+
+                                    <!-- content -->
+                                    <div class="content">
+                                        <div class="my-sub-title my-uppercase my-fw-bolder">Monthly Profit</div>
 
                                         <div class="mt-2">
                                             <div><strong class="my-fw-bold">By Sell Price: </strong><span><i
@@ -758,7 +817,7 @@
                         <!-- single col -->
                         <div class="col-sm-12 col-xl-6">
                             <div class="my-card h-100">
-                                <div class="my-title-sm">Top 10 Products</div>
+                                <div class="my-title-sm">Kitchen Order Token (KOT)</div>
                                 <ul class="mt-4 my-flex-column my-gap-10 ps-4">
                                     <li>Product 1</li>
                                     <li>Product 2</li>
@@ -771,7 +830,7 @@
                         <!-- single col -->
                         <div class="col-sm-12 col-xl-6">
                             <div class="my-card h-100">
-                                <div class="my-title-sm">Recent 10 Customer</div>
+                                <div class="my-title-sm">Recent Order List</div>
                                 <div class="mt-4">
                                     <table class="table table-white table-striped">
                                         <thead>
@@ -812,7 +871,7 @@
                         <!-- single col -->
                         <div class="col-sm-12 col-xl-6">
                             <div class="my-card h-100">
-                                <div class="my-title-sm">Sales Payment Due</div>
+                                <div class="my-title-sm">Recent Sales</div>
 
                                 <div class="btn-group payment-btns mt-4" role="group" aria-label="Default button group">
                                     <button type="button"
@@ -874,7 +933,7 @@
                         <!-- single col -->
                         <div class="col-sm-12 col-xl-6">
                             <div class="my-card h-100">
-                                <div class="my-title-sm">Purchase Payment Due</div>
+                                <div class="my-title-sm">Recent Collection</div>
                                 <div class="btn-group payment-btns mt-4" role="group" aria-label="Default button group">
                                     <button type="button"
                                         class="btn btn-outline-primary my-fs-sm my-flex-center my-gap-5">
@@ -1242,12 +1301,12 @@
 
                 </div>
             </div>
+
+            <div class="footer">
+                <p class="my-text-navy text-center pe-3">&copy;2013-2024 <a target="_blank"
+                        href="https://hsblco.com/">HSBLCO</a> All Right Reserved</p>
+            </div>
         </main>
-
-
-
-
-
 
 
 

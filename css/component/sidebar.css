@@ -5,22 +5,14 @@
     border-bottom: 1px solid #937e7e59;
 }
 
+.logo img {
+    height: 64px;
+    object-fit: contain;
+    width: 265px;
+    margin-left: -28px;
+}
+
 .logo a {
     width: 100%;
     padding-right: 25px;
-}
-
-.logo .logo-point {
-    position: absolute;
-    right: 80px;
-    top: 60%;
-    transform: translateY(-60%);
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    transition: .2s linear;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--orange);
 }
