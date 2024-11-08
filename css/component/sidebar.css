@@ -82,9 +82,7 @@
     transition: max-height 1s linear;
 }
 
-.sidebar-nav-item-drop .drop-li {
-    position: relative;
-}
+
 
 .sidebar-nav-item-drop.active {
     max-height: 1000px;
@@ -94,6 +92,7 @@
 .sidebar-drop-item {
     width: 100%;
     padding: 5px 12px;
+    /* padding-right: 0; */
     padding-left: 24px;
     color: var(--white-off3);
     transition: color .2s linear;
@@ -116,44 +115,71 @@
     transition: color .2s linear;
 }
 
-/* inner click drop down */
-.inner-click-dropdown {
-    margin-left: 50px;
-    background-color: var(--blue);
+.sidebar-drop-item.no-hover:hover {
+    color: var(--white-off3)
 }
 
-.inner-click-dropdown a {
+/* inner click drop down */
+.inner-click-dropdown {
+    margin-left: 10px;
+    background-color: var(--navy);
+}
+
+
+
+.inner-click-dropdown .inner-click-dropdown-a {
     width: 100%;
-    padding: 5px;
+    padding: 0px 5px;
     font-size: var(--fs-xs);
-    color: var(--white-off);
+    color: var(--white-off2);
+    line-height: 24px;
+}
+
+.inner-click-dropdown-a:hover {
+    color: var(--white);
 }
 
 /*______  sidebar-nav-item-sub-drop  ______ */
+.drop-li-hover {
+    position: relative !important;
+}
+
 .sidebar-nav-item-sub-drop {
     position: absolute;
-    right: -15px;
-    top: 50%;
-    transform: translateY(-50%);
-    row-gap: 0;
-    background-color: var(--white);
+    right: 0;
+    bottom: 20px;
+    background-color: var(--dark);
     color: var(--gray);
     display: none;
+    font-size: var(--fs-xs);
+    color: var(--white-off2);
+    padding: 3px 0;
+    max-height: 600px;
+}
+
+.sidebar-nav-item-sub-drop a {
+    width: 100%;
+}
+
+.sidebar-nav-item-sub-drop a:hover {
+    color: var(--white-off);
+    text-decoration: underline;
 }
 
 .sidebar-nav-item-sub-drop::after {
     content: '';
     position: absolute;
-    top: 50%;
-    left: -10px;
-    clip-path: polygon(100% 0, 17% 50%, 100% 100%);
-    background-color: var(--white);
-    height: 10px;
-    width: 10px;
-    transform: translateY(-50%);
+    bottom: -12px;
+    left: 50%;
+    clip-path: polygon(100% 0, 0 0, 50% 51%);
+    background-color: var(--dark);
+    height: 12px;
+    width: 12px;
+    transform: translateX(-50%);
+    z-index: 12;
 }
 
-.sidebar-nav-item-drop .drop-li:hover .sidebar-nav-item-sub-drop {
+.sidebar-nav-item-drop .drop-li-hover:hover .sidebar-nav-item-sub-drop {
     display: block;
 }
 
