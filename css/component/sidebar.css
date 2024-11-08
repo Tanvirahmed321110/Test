@@ -1,3 +1,167 @@
+/********************
+****    Sidebar   ****
+********************/
+.my-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    max-width: 260px;
+    width: 260px;
+    background-image: var(--gradient-1);
+}
+
+.sidebar-area {
+    width: 100%;
+    height: calc(100% - 65px);
+    overflow-y: auto;
+}
+
+.sidebar-inner .sidebar-nav-item {
+    width: 100%;
+    color: var(--white-off2);
+    padding: 12px 15px 12px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    position: relative;
+    font-size: var(--fs-md);
+}
+
+.sidebar-nav-item img {
+    width: 26px;
+
+}
+
+.sidebar-nav-item .right-arrow {
+    transition: transform .2s linear;
+}
+
+.sidebar-nav-item .right-arrow.active {
+    transform: rotate(90deg);
+}
+
+.sidebar-inner .sidebar-nav-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    background-color: var(--gray);
+    transition: width .2s linear;
+}
+
+/* active */
+.sidebar-inner .sidebar-nav-item.active {
+    color: var(--white);
+    font-weight: var(--fw-600);
+    background-color: var(--navy-2);
+    transition: background .2s linear;
+}
+
+.sidebar-inner .sidebar-nav-item:hover::after,
+.sidebar-nav-item.active::after {
+    width: 6px;
+}
+
+/* hover */
+.sidebar-inner .sidebar-nav-item:hover {
+    background-color: var(--navy-2);
+    transition: background .2s linear;
+}
+
+
+/*______ Sidebar Dropdown ______ */
+.sidebar-nav-item-drop {
+    background-color: var(--navy-2);
+    position: relative;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s linear;
+}
+
+.sidebar-nav-item-drop .drop-li {
+    position: relative;
+}
+
+.sidebar-nav-item-drop.active {
+    max-height: 1000px;
+    overflow: visible;
+}
+
+.sidebar-drop-item {
+    width: 100%;
+    padding: 5px 12px;
+    padding-left: 24px;
+    color: var(--white-off3);
+    transition: color .2s linear;
+    cursor: pointer;
+}
+
+.sidebar-drop-item .left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+}
+
+.sidebar-drop-item .icon {
+    font-size: var(--fs-xl);
+}
+
+.sidebar-drop-item:hover {
+    color: var(--white);
+    transition: color .2s linear;
+}
+
+/* inner click drop down */
+.inner-click-dropdown {
+    margin-left: 50px;
+    background-color: var(--blue);
+}
+
+.inner-click-dropdown a {
+    width: 100%;
+    padding: 5px;
+    font-size: var(--fs-xs);
+    color: var(--white-off);
+}
+
+/*______  sidebar-nav-item-sub-drop  ______ */
+.sidebar-nav-item-sub-drop {
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    row-gap: 0;
+    background-color: var(--white);
+    color: var(--gray);
+    display: none;
+}
+
+.sidebar-nav-item-sub-drop::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    clip-path: polygon(100% 0, 17% 50%, 100% 100%);
+    background-color: var(--white);
+    height: 10px;
+    width: 10px;
+    transform: translateY(-50%);
+}
+
+.sidebar-nav-item-drop .drop-li:hover .sidebar-nav-item-sub-drop {
+    display: block;
+}
+
+.sidebar-nav-item-sub-drop li a {
+    padding: 5px 12px;
+}
+
+/* Logo */
 .logo {
     position: relative;
     background-color: var(--navy-2);
@@ -6,10 +170,10 @@
 }
 
 .logo img {
-    height: 64px;
+    height: 62px;
     object-fit: contain;
     width: 265px;
-    margin-left: -28px;
+    margin-left: -40px;
 }
 
 .logo a {

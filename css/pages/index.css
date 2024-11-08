@@ -132,73 +132,6 @@
 
 
 
-/********************
-****    Sidebar   ****
-********************/
-.my-sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100dvh;
-    max-width: 260px;
-    width: 260px;
-    background-image: var(--gradient-1);
-}
-
-.sidebar-area {
-    width: 100%;
-    height: calc(100% - 65px);
-    overflow-y: auto;
-}
-
-.sidebar-inner .sidebar-nav-item {
-    width: 100%;
-    color: var(--white-off2);
-    padding: 12px 15px 12px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 5px;
-    position: relative;
-    font-size: var(--fs-md);
-}
-
-.sidebar-nav-item i {
-    font-size: var(--fs-xl);
-}
-
-.sidebar-nav-item .right-arrow i {
-    font-size: var(--fs-xl);
-}
-
-.sidebar-inner .sidebar-nav-item::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0px;
-    width: 0px;
-    height: 100%;
-    background-color: var(--gray);
-    transition: width .2s linear;
-}
-
-/* active */
-.sidebar-inner .sidebar-nav-item.active {
-    color: var(--white);
-    font-weight: var(--fw-600);
-}
-
-.sidebar-inner .sidebar-nav-item:hover::after {
-    width: 6px;
-}
-
-/* hover */
-.sidebar-inner .sidebar-nav-item:hover {
-    background-color: var(--navy-2);
-    transition: background .2s linear;
-}
-
-
 
 /**********************
 ****    Main Body  ****
@@ -285,6 +218,7 @@ body::-webkit-scrollbar-thumb {
     padding: 30px 12px;
     transition: .5s;
     box-shadow: var(--shadow-2);
+    border-radius: 10px;
 }
 
 

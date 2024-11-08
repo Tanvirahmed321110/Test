@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HSBLCO ERP||Dhaka Club Ltd.</title>
+        <title>HSBLCO ERP || Dhaka Club Ltd.</title>
         <!-- Bootstrap CDN -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- ICON -->
@@ -29,9 +29,12 @@
 
                     <div class="my-flex-center me-4 my-gap-10">
                         <div class="my-flex-center">
-                            <button type="button" class="my-btn my-bg-gray px-2 my-text-white rounded-1 my-fs-xl "
+                            <button type="button"
+                                class="my-btn my-bg-gray my-tooltip px-2 my-text-white rounded-1 my-fs-xl my-p-relative"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class='bx bx-question-mark'></i>
+
+                                <span class="my-hover-tooltip">Hover Title</span>
                             </button>
 
                             <!-- other dropdown -->
@@ -71,9 +74,13 @@
                             </div>
                         </div>
                         <div class="my-flex-center">
-                            <button type="button" class="my-btn my-bg-gray px-2 my-text-white rounded-1 my-fs-xl "
+                            <button type="button"
+                                class="my-p-relative my-tooltip my-btn my-bg-gray px-2 my-text-white rounded-1 my-fs-xl "
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class='bx bx-plus'></i>
+
+                                <!-- hover show -->
+                                <span class="my-hover-tooltip">Hover Title</span>
                             </button>
 
                             <!-- otehr dropdown -->
@@ -116,10 +123,13 @@
 
                         <!-- other -->
                         <div>
-                            <button class="my-btn my-bg-gray px-2 my-text-white rounded-1 my-fs-xl"
-                                data-bs-toggle="modal" data-bs-target="#modal-other" title="other"
-                                data-bs-placement="left" data-bs-title="Tooltip on left">
+                            <button
+                                class="my-btn my-bg-gray px-2 my-p-relative my-tooltip my-text-white rounded-1 my-fs-xl"
+                                data-bs-toggle="modal" data-bs-target="#modal-other" data-bs-placement="left"
+                                data-bs-title="Tooltip on left">
                                 <i class='bx bx-down-arrow-alt'></i>
+
+                                <span class="my-hover-tooltip">Other </span>
                             </button>
 
                             <!-- Modal -->
@@ -145,13 +155,20 @@
                                 </div>
                             </div>
                         </div>
+
+
                         <!-- Sale -->
                         <div>
-                            <button class="my-btn my-bg-gray px-2 my-text-white rounded-1 my-fs-xl"
-                                data-bs-toggle="modal" data-bs-target="#modal-sale" title="sale"
-                                data-bs-placement="left" data-bs-title="Tooltip on left">
+                            <button
+                                class="my-btn my-bg-gray px-2 my-text-white rounded-1 my-fs-xl my-p-relative my-tooltip"
+                                data-bs-toggle="modal" data-bs-target="#modal-sale" data-bs-placement="left"
+                                data-bs-title="Tooltip on left">
                                 <i class='bx bx-grid-alt'></i>
                                 <span class="ps-2 my-fs-sm">POS</span>
+
+                                <!-- hover show -->
+                                <span class="my-hover-tooltip">Hover Tooltip</span>
+
                             </button>
 
                             <!-- Modal -->
@@ -180,10 +197,12 @@
 
                         <!-- Today Income -->
                         <div class="today-income">
-                            <button class="my-btn my-bg-gray px-2 my-text-white rounded-1 my-fs-xl"
-                                data-bs-toggle="modal" data-bs-target="#staticBackdrop" title="Today Income"
-                                data-bs-placement="bottom">
+                            <button
+                                class="my-btn my-bg-gray px-2 my-text-white rounded-1 my-fs-xl my-tooltip my-p-relative"
+                                data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-bs-placement="bottom">
                                 <i class='bx bx-dollar'></i>
+
+                                <span class="my-hover-tooltip">Today Icome</span>
                             </button>
 
                             <div class="modal modal-lg fade" id="staticBackdrop" data-bs-backdrop="static"
@@ -388,37 +407,122 @@
                         <li class="sidebar-nav-item-li my-w-100">
                             <a class="sidebar-nav-item active" href="#">
                                 <div class="my-flex-center my-gap-10">
-                                    <span><i class="ri-home-line"></i></span>
+                                    <img src="./images/sidebar Icons/homepage.png" alt="icon">
                                     Dashboard
                                 </div>
-                                <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
                             </a>
                         </li>
                         <!-- single nav li -->
                         <li class="sidebar-nav-item-li my-w-100">
                             <a class="sidebar-nav-item " href="#">
                                 <div class="my-flex-center my-gap-10">
-                                    <span><i class='bx bx-group'></i></span>
+                                    <img src="./images/sidebar Icons/user-management.png" alt="icon">
                                     User Management
                                 </div>
                                 <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
                             </a>
+
+                            <!-- click dropdown -->
+                            <div class="sidebar-nav-item-drop">
+                                <ul>
+                                    <li class="drop-li">
+                                        <div class="sidebar-drop-item ">
+                                            <div class="my-flex-between w-100">
+                                                <div class="left">
+                                                    <span class="icon">&rightarrow;</span>
+                                                    <span>User Creation</span>
+                                                </div>
+                                                <div class="icon my-fs-lg">
+                                                    <i class="ri-arrow-down-s-fill"></i>
+                                                </div>
+                                            </div>
+
+                                            <!-- inner dropdown -->
+                                            <ul class="inner-click-dropdown">
+                                                <li>
+                                                    <a class="my-d-flex my-align-center my-gap-5" href="#">
+                                                        <span class="icon">&rightarrow;</span>
+                                                        <span>Role Based User Setup</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="my-d-flex my-align-center my-gap-5" href="#">
+                                                        <span class="icon">&rightarrow;</span>
+                                                        <span>Default Super User</span>
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+
+                                    </li>
+                                    <li class="drop-li">
+                                        <a class="sidebar-drop-item " href="#">
+                                            <span class="icon">&rightarrow;</span>
+                                            <span>page one</span>
+                                        </a>
+                                    </li>
+                                    <li class="drop-li">
+                                        <a class="sidebar-drop-item" href="#">
+                                            <span class="icon">&rightarrow;</span>
+                                            <span>page one</span>
+                                        </a>
+
+                                        <!-- sidebar-nav-item-sub-drop -->
+                                        <ul class="sidebar-nav-item-sub-drop">
+                                            <li>
+                                                <a href="#">sub drop page one</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">sub drop page one</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">sub drop page one</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <!-- single nav li -->
                         <li class="sidebar-nav-item-li my-w-100">
                             <a class="sidebar-nav-item " href="#">
                                 <div class="my-flex-center my-gap-10">
-                                    <span><i class='bx bxs-contact'></i></span>
+                                    <img src="./images/sidebar Icons/hrm (1).png" alt="icon">
                                     HRM
                                 </div>
                                 <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
                             </a>
+
+                            <!-- dropdown -->
+                            <div class="sidebar-nav-item-drop">
+                                <ul>
+                                    <li>
+                                        <a class="sidebar-drop-item" href="#">
+                                            <span class="icon">&rightarrow;</span>
+                                            <span>page one</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="sidebar-drop-item" href="#">
+                                            <span class="icon">&rightarrow;</span>
+                                            <span>page one</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="sidebar-drop-item" href="#">
+                                            <span class="icon">&rightarrow;</span>
+                                            <span>page one</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <!-- single nav li -->
                         <li class="sidebar-nav-item-li my-w-100">
                             <a class="sidebar-nav-item " href="#">
                                 <div class="my-flex-center my-gap-10">
-                                    <span><i class='bx bxs-contact'></i></span>
+                                    <img src="./images/sidebar Icons/pos.png" alt="icon">
                                     Point of Sales
                                 </div>
                                 <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
@@ -428,7 +532,7 @@
                         <li class="sidebar-nav-item-li my-w-100">
                             <a class="sidebar-nav-item " href="#">
                                 <div class="my-flex-center my-gap-10">
-                                    <span><i class='bx bxl-product-hunt'></i></span>
+                                    <img src="./images/sidebar Icons/inventory.png" alt="icon">
                                     Inventory
                                 </div>
                                 <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
@@ -437,7 +541,7 @@
                         <li class="sidebar-nav-item-li my-w-100">
                             <a class="sidebar-nav-item " href="#">
                                 <div class="my-flex-center my-gap-10">
-                                    <span><i class='bx bxl-product-hunt'></i></span>
+                                    <img src="./images/sidebar Icons/reservation.png" alt="icon">
                                     Reservation
                                 </div>
                                 <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
@@ -447,7 +551,7 @@
                         <li class="sidebar-nav-item-li my-w-100">
                             <a class="sidebar-nav-item " href="#">
                                 <div class="my-flex-center my-gap-10">
-                                    <span><i class='bx bxl-product-hunt'></i></span>
+                                    <img src="./images/sidebar Icons/cash.png" alt="icon">
                                     Cash Cards
                                 </div>
                                 <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
@@ -457,7 +561,7 @@
                         <li class="sidebar-nav-item-li my-w-100">
                             <a class="sidebar-nav-item " href="#">
                                 <div class="my-flex-center my-gap-10">
-                                    <span><i class='bx bxl-product-hunt'></i></span>
+                                    <img src="./images/sidebar Icons/crm.png" alt="icon">
                                     MIS/CRM
                                 </div>
                                 <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
@@ -467,7 +571,7 @@
                         <li class="sidebar-nav-item-li my-w-100">
                             <a class="sidebar-nav-item " href="#">
                                 <div class="my-flex-center my-gap-10">
-                                    <span><i class='bx bxs-up-arrow-circle'></i></span>
+                                    <img src="./images/sidebar Icons/account.png" alt="icon">
                                     Accounts
                                 </div>
                                 <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
@@ -477,7 +581,7 @@
                         <li class="sidebar-nav-item-li my-w-100">
                             <a class="sidebar-nav-item " href="#">
                                 <div class="my-flex-center my-gap-10">
-                                    <span><i class='bx bxs-down-arrow-circle'></i></span>
+                                    <img src="./images/sidebar Icons/attendant-list.png" alt="icon">
                                     Attendance
                                 </div>
                                 <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
@@ -487,7 +591,7 @@
                         <li class="sidebar-nav-item-li my-w-100">
                             <a class="sidebar-nav-item " href="#">
                                 <div class="my-flex-center my-gap-10">
-                                    <span><i class='bx bxs-down-arrow-circle'></i></span>
+                                    <img src="./images/sidebar Icons/payroll.png" alt="icon">
                                     Payroll
                                 </div>
                                 <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
@@ -497,7 +601,7 @@
                         <li class="sidebar-nav-item-li my-w-100">
                             <a class="sidebar-nav-item " href="#">
                                 <div class="my-flex-center my-gap-10">
-                                    <span><i class='bx bxs-down-arrow-circle'></i></span>
+                                    <img src="./images/sidebar Icons/email.png" alt="icon">
                                     Email/SMS
                                 </div>
                                 <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
@@ -507,7 +611,7 @@
                         <li class="sidebar-nav-item-li my-w-100">
                             <a class="sidebar-nav-item " href="#">
                                 <div class="my-flex-center my-gap-10">
-                                    <span><i class="ri-home-line"></i></span>
+                                    <img src="./images/sidebar Icons/report.png" alt="icon">
                                     Reports
                                 </div>
                                 <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
@@ -517,7 +621,7 @@
                         <li class="sidebar-nav-item-li my-w-100">
                             <a class="sidebar-nav-item " href="#">
                                 <div class="my-flex-center my-gap-10">
-                                    <span><i class="ri-home-line"></i></span>
+                                    <img src="./images/sidebar Icons/settings.png" alt="icon">
                                     Setting
                                 </div>
                                 <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
@@ -527,7 +631,7 @@
                         <li class="sidebar-nav-item-li my-w-100">
                             <a class="sidebar-nav-item " href="#">
                                 <div class="my-flex-center my-gap-10">
-                                    <span><i class="ri-home-line"></i></span>
+                                    <img src="./images/sidebar Icons/support-ticket.png" alt="icon">
                                     Support Ticket
                                 </div>
                                 <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
@@ -537,7 +641,7 @@
                         <li class="sidebar-nav-item-li my-w-100">
                             <a class="sidebar-nav-item " href="#">
                                 <div class="my-flex-center my-gap-10">
-                                    <span><i class="ri-home-line"></i></span>
+                                    <img src="./images/sidebar Icons/log-out.png" alt="icon">
                                     Log Out
                                 </div>
                                 <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
@@ -703,7 +807,7 @@
 
                     <!-- body top down -->
                     <div class="body-top-down p-3  my-bg-purple">
-                        <div class="row gx-4 my-4 ">
+                        <div class="row gx-2 my-4 ">
 
                             <!-- single col -->
                             <div class="col-sm-12 col-md-6 col-xl-3">
@@ -1313,20 +1417,9 @@
 
 
 
+        <script src="./js/utilitis.js"></script>
         <!-- Bootstrap CDN -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-        <script>
-
-            // tooltip
-            document.addEventListener('DOMContentLoaded', function () {
-                var tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-                tooltipTriggerList.forEach(function (tooltipTriggerEl) {
-                    new bootstrap.Tooltip(tooltipTriggerEl);
-                });
-            });
-
-        </script>
     </body>
 
 </html>
