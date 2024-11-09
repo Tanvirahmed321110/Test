@@ -9,6 +9,11 @@
     max-width: 260px;
     width: 260px;
     background-image: var(--gradient-1);
+    transition: .3s linear;
+}
+
+.my-sidebar.active {
+    left: -265px;
 }
 
 .sidebar-area {
@@ -85,7 +90,7 @@
 
 
 .sidebar-nav-item-drop.active {
-    max-height: 1000px;
+    max-height: 1800px;
     overflow: visible;
 }
 
@@ -154,7 +159,7 @@
     font-size: var(--fs-xs);
     color: var(--white-off2);
     padding: 3px 0;
-    max-height: 600px;
+    max-height: 1600px;
 }
 
 .sidebar-nav-item-sub-drop a {

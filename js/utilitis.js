@@ -54,3 +54,17 @@ if (allNavItems) {
         });
     });
 }
+
+
+
+// menu Btn
+const menuBtn = document.getElementById('menu-btn')
+const sidebar = document.querySelector('.my-sidebar')
+const mainBody = document.querySelector('.main-body')
+const myHeader = document.querySelector('.my-header')
+
+menuBtn.addEventListener('click', function () {
+    sidebar.classList.toggle('active')
+    mainBody.classList.toggle('active')
+    myHeader.classList.toggle('active')
+})

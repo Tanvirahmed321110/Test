@@ -10,8 +10,13 @@
     background-image: var(--gradient-1);
     border-bottom: 1px solid #937e7e59;
     z-index: 1050;
+    transition: .3s linear;
 }
 
+.my-header.active {
+    left: 0px;
+    width: 100%;
+}
 
 /* modal problems fixed */
 /* Modal backdrop */
@@ -143,6 +148,12 @@
     background-color: var(--white);
     height: auto;
     padding-bottom: 20px;
+    transition: margin .3s linear;
+}
+
+.main-body.active {
+    margin-left: 0;
+    width: 100%;
 }
 
 body::-webkit-scrollbar {

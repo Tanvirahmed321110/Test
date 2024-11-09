@@ -20,7 +20,8 @@
             <div class="header-area my-h-100 my-flex-between px-3">
                 <!-- left -->
                 <div class="left">
-                    <button class="my-btn menu-btn  rounded-1 my-text-white my-fs-xxl"><i class="ri-menu-fill"></i>
+                    <button id="menu-btn" class="my-btn menu-btn  rounded-1 my-text-white my-fs-xxl"><i
+                            class="ri-menu-fill"></i>
                     </button>
                 </div>
 
@@ -424,7 +425,7 @@
                             </div>
 
                             <!-- click dropdown -->
-                            <div class="sidebar-nav-item-drop">
+                            <div class="sidebar-nav-item-drop ">
                                 <ul>
                                     <!-- drop li -->
                                     <li class="drop-li">
@@ -576,15 +577,15 @@
 
 
 
-                        <!-- single nav li -->
+                        <!-- single nav li HRM-->
                         <li class="sidebar-nav-item-li my-w-100">
-                            <a class="sidebar-nav-item " href="#">
+                            <div class="sidebar-nav-item ">
                                 <div class="my-flex-center my-gap-10">
                                     <img src="./images/sidebar Icons/hrm (1).png" alt="icon">
                                     HRM
                                 </div>
                                 <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
-                            </a>
+                            </div>
 
                             <!-- dropdown -->
                             <div class="sidebar-nav-item-drop">
@@ -592,19 +593,55 @@
                                     <li>
                                         <a class="sidebar-drop-item" href="#">
                                             <span class="icon">&rightarrow;</span>
-                                            <span>page one</span>
+                                            <span>Employee Details Information Setup</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a class="sidebar-drop-item" href="#">
                                             <span class="icon">&rightarrow;</span>
-                                            <span>page one</span>
+                                            <span>Employee Training Information Setup</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a class="sidebar-drop-item" href="#">
                                             <span class="icon">&rightarrow;</span>
-                                            <span>page one</span>
+                                            <span> Employee Qualification Setup</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="sidebar-drop-item" href="#">
+                                            <span class="icon">&rightarrow;</span>
+                                            <span> Employee Knowledge / Skill Information Setup</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="sidebar-drop-item" href="#">
+                                            <span class="icon">&rightarrow;</span>
+                                            <span> Employee Reference Information Entry</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="sidebar-drop-item" href="#">
+                                            <span class="icon">&rightarrow;</span>
+                                            <span>Designation Setup</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="sidebar-drop-item" href="#">
+                                            <span class="icon">&rightarrow;</span>
+                                            <span>Grade Setup</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="sidebar-drop-item" href="#">
+                                            <span class="icon">&rightarrow;</span>
+                                            <span> Employee Details Report</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="sidebar-drop-item" href="#">
+                                            <span class="icon">&rightarrow;</span>
+                                            <span> Organogram Report</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -671,52 +708,53 @@
                                                         <span>Bar Order Token (BOT)</span>
                                                     </a>
                                                 </li>
+                                            </ul>
+                                        </div>
+                                    </li>
 
 
-                                                <!-- drop li -->
-                                                <li class="drop-li">
-                                                    <div class="sidebar-drop-item ">
-                                                        <div class="my-flex-between w-100">
-                                                            <div class="left">
-                                                                <span>Invoice Edit</span>
-                                                            </div>
-                                                            <div class="icon my-fs-lg">
-                                                                <i class="ri-arrow-down-s-fill"></i>
-                                                            </div>
-                                                        </div>
+                                    <!-- drop li -->
+                                    <li class="drop-li">
+                                        <div class="sidebar-drop-item ">
+                                            <div class="my-flex-between w-100">
+                                                <div class="left">
+                                                    <span>Invoice Edit</span>
+                                                </div>
+                                                <div class="icon my-fs-lg">
+                                                    <i class="ri-arrow-down-s-fill"></i>
+                                                </div>
+                                            </div>
 
-                                                        <!-- inner click dropdown -->
-                                                        <ul class="inner-click-dropdown">
-                                                            <li>
-                                                                <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                                    href="#">
-                                                                    <span class="icon">&rightarrow;</span>
-                                                                    <span>Complete Edit</span>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                                    href="#">
-                                                                    <span class="icon">&rightarrow;</span>
-                                                                    <span>Made of Payment</span>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                                    href="#">
-                                                                    <span class="icon">&rightarrow;</span>
-                                                                    <span>Date Correction</span>
-                                                                </a>
-                                                            </li>
-
-                                                        </ul>
-                                                    </div>
-
+                                            <!-- inner click dropdown -->
+                                            <ul class="inner-click-dropdown">
+                                                <li>
+                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                        href="#">
+                                                        <span class="icon">&rightarrow;</span>
+                                                        <span>Complete Edit</span>
+                                                    </a>
                                                 </li>
+                                                <li>
+                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                        href="#">
+                                                        <span class="icon">&rightarrow;</span>
+                                                        <span>Made of Payment</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                        href="#">
+                                                        <span class="icon">&rightarrow;</span>
+                                                        <span>Date Correction</span>
+                                                    </a>
+                                                </li>
+
                                             </ul>
                                         </div>
 
                                     </li>
+
+
 
 
                                     <!-- drop li -->
@@ -750,7 +788,6 @@
 
                                             </ul>
                                         </div>
-
                                     </li>
 
                                     <!-- drop li -->
@@ -845,905 +882,1178 @@
 
                             <div class="sidebar-nav-item-drop">
                                 <ul>
-                                    <!-- drop li -->
-                                    <li class="drop-li">
-                                        <div class="sidebar-drop-item ">
-                                            <div class="my-flex-between w-100">
-                                                <div class="left">
-                                                    <span>Product Information </span>
-                                                </div>
-                                                <div class="icon my-fs-xl">
-                                                    <i class="ri-arrow-down-s-fill"></i>
-                                                </div>
+                                    l <div class="sidebar-drop-item ">
+                                        <div class="my-flex-between w-100">
+                                            <div class="left">
+                                                <span>Product Information </span>
                                             </div>
-                                            <!-- item layer -->
-                                            <ul class="inner-click-dropdown">
-                                                <li class="drop-li-hover">
-                                                    <div
-                                                        class="inner-click-dropdown-a my-flex-between my-align-center my-gap-5">
-                                                        <span>Item Layer</span>
-                                                        <span class="my-fs-md"> <i class="ri-arrow-down-s-fill"></i>
-                                                        </span>
-                                                    </div>
-
-                                                    <ul class="sidebar-nav-item-sub-drop">
-                                                        <li>
-                                                            <a href="#"> Item</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"> Category</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Brand</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Details/ Size</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                            <!-- item layer -->
-                                            <ul class="inner-click-dropdown">
-                                                <li class="drop-li-hover">
-                                                    <div
-                                                        class="inner-click-dropdown-a my-flex-between my-align-center my-gap-5">
-                                                        <span>Product Status</span>
-                                                        <span class="my-fs-md"> <i class="ri-arrow-down-s-fill"></i>
-                                                        </span>
-                                                    </div>
-
-                                                    <ul class="sidebar-nav-item-sub-drop">
-                                                        <li>
-                                                            <a href="#"> General</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"> Raw Materials</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Finished Goods</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-
-                                            </ul>
-                                            <!-- item layer -->
-                                            <ul class="inner-click-dropdown">
-                                                <li class="drop-li-hover">
-                                                    <div
-                                                        class="inner-click-dropdown-a my-flex-between my-align-center my-gap-5">
-                                                        <span>Product Type</span>
-                                                        <span class="my-fs-md"> <i class="ri-arrow-down-s-fill"></i>
-                                                        </span>
-                                                    </div>
-
-                                                    <ul class="sidebar-nav-item-sub-drop">
-                                                        <li>
-                                                            <a href="#"> Inventory</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"> Inventory Raw Materials</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Service</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Fixed Asset</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-
-
-                                            <!-- item layer -->
-                                            <ul class="inner-click-dropdown">
-                                                <li class="drop-li-hover">
-                                                    <div
-                                                        class="inner-click-dropdown-a my-flex-between my-align-center my-gap-5">
-                                                        <span>Unit Setup</span>
-                                                        <span class="my-fs-md"> <i class="ri-arrow-down-s-fill"></i>
-                                                        </span>
-                                                    </div>
-
-                                                    <ul class="sidebar-nav-item-sub-drop">
-                                                        <li>
-                                                            <a href="#"> Main Unit</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"> Sale Unit</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Consumption Type</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Discount</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Service Charge</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">VAT</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"> Supplementary Duty – SD</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"> Life Value</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"> Depreciation Rate</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"> Salvage Value</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"> Product Barcode</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Product Barcode</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Product Expiry</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
+                                            <div class="icon my-fs-xl">
+                                                <i class="ri-arrow-down-s-fill"></i>
+                                            </div>
                                         </div>
-                                    </li>
-                                </ul>
-                            </div>
+                                        <!-- item layer -->
+                                        <ul class="inner-click-dropdown">
+                                            <li class="drop-li-hover">
+                                                <div
+                                                    class="inner-click-dropdown-a my-flex-between my-align-center my-gap-5">
+                                                    <span>Item Layer</span>
+                                                    <span class="my-fs-md"> <i class="ri-arrow-down-s-fill"></i>
+                                                    </span>
+                                                </div>
 
+                                                <ul class="sidebar-nav-item-sub-drop">
+                                                    <li>
+                                                        <a href="#"> Item</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> Category</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Brand</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Details/ Size</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <!-- item layer -->
+                                        <ul class="inner-click-dropdown">
+                                            <li class="drop-li-hover">
+                                                <div
+                                                    class="inner-click-dropdown-a my-flex-between my-align-center my-gap-5">
+                                                    <span>Product Status</span>
+                                                    <span class="my-fs-md"> <i class="ri-arrow-down-s-fill"></i>
+                                                    </span>
+                                                </div>
+
+                                                <ul class="sidebar-nav-item-sub-drop">
+                                                    <li>
+                                                        <a href="#"> General</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> Raw Materials</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Finished Goods</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                        </ul>
+                                        <!-- item layer -->
+                                        <ul class="inner-click-dropdown">
+                                            <li class="drop-li-hover">
+                                                <div
+                                                    class="inner-click-dropdown-a my-flex-between my-align-center my-gap-5">
+                                                    <span>Product Type</span>
+                                                    <span class="my-fs-md"> <i class="ri-arrow-down-s-fill"></i>
+                                                    </span>
+                                                </div>
+
+                                                <ul class="sidebar-nav-item-sub-drop">
+                                                    <li>
+                                                        <a href="#"> Inventory</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> Inventory Raw Materials</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Service</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Fixed Asset</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+
+
+                                        <!-- item layer -->
+                                        <ul class="inner-click-dropdown">
+                                            <li class="drop-li-hover">
+                                                <div
+                                                    class="inner-click-dropdown-a my-flex-between my-align-center my-gap-5">
+                                                    <span>Unit Setup</span>
+                                                    <span class="my-fs-md"> <i class="ri-arrow-down-s-fill"></i>
+                                                    </span>
+                                                </div>
+
+                                                <ul class="sidebar-nav-item-sub-drop">
+                                                    <li>
+                                                        <a href="#"> Main Unit</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> Sale Unit</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Consumption Type</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Discount</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Service Charge</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">VAT</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> Supplementary Duty – SD</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> Life Value</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> Depreciation Rate</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> Salvage Value</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> Product Barcode</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Product Barcode</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Product Expiry</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
                         </li>
-
-                        <!-- single nav li Reservation -->
-                        <li class="sidebar-nav-item-li my-w-100">
-                            <div class="sidebar-nav-item ">
-                                <div class="my-flex-center my-gap-10">
-                                    <img src="./images/sidebar Icons/reservation.png" alt="icon">
-                                    Reservation
-                                </div>
-                                <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
-                            </div>
-
-                            <!-- click dropdown -->
-                            <div class="sidebar-nav-item-drop">
-                                <ul>
-                                    <!-- drop li -->
-                                    <li class="drop-li">
-                                        <div class="sidebar-drop-item no-hover">
-                                            <ul class="my-flex-column my-gap-5">
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Guest House Room Booking/ Reservation</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Booking/ Reservation</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Guest House Sale</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Booking/ Reservation wise Check-out</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Allow Triple (Cash Card/ Credit Card/ Account) Mode of
-                                                            Payment Sale</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Guest Information Entry</span>
-                                                    </a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-
-                        <!-- single nav li Cash Cards -->
-                        <li class="sidebar-nav-item-li my-w-100">
-                            <div class="sidebar-nav-item ">
-                                <div class="my-flex-center my-gap-10">
-                                    <img src="./images/sidebar Icons/cash.png" alt="icon">
-                                    Cash Cards
-                                </div>
-                                <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
-                            </div>
-
-                            <!-- click dropdown -->
-                            <div class="sidebar-nav-item-drop">
-                                <ul>
-                                    <!-- drop li -->
-                                    <li class="drop-li">
-                                        <div class="sidebar-drop-item no-hover">
-                                            <ul class="my-flex-column my-gap-5">
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Smart Card Entry (Member)</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Smart Card Entry (Spouse)</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Smart Card Entry (Children)</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Smart Card Entry (Guest)</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Bar Sale</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Smart Card Block</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Smart Card Balance Transfer</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Cash Card Refill</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Cash Card Return</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Recharge Statement Department</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Recharge Details Department </span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Recharge Summary Department</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> User wise Cash Deposit Statement</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Duration Wise Cash Card Statement</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </li>
-
-
-                        <!-- single nav li -->
-                        <li class="sidebar-nav-item-li my-w-100">
-                            <div class="sidebar-nav-item ">
-                                <div class="my-flex-center my-gap-10">
-                                    <img src="./images/sidebar Icons/crm.png" alt="icon">
-                                    MIS/CRM
-                                </div>
-                                <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
-                            </div>
-                        </li>
-
-
-                        <!-- single nav li Account -->
-                        <li class="sidebar-nav-item-li my-w-100">
-                            <div class="sidebar-nav-item ">
-                                <div class="my-flex-center my-gap-10">
-                                    <img src="./images/sidebar Icons/account.png" alt="icon">
-                                    Accounts
-                                </div>
-                                <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
-                            </div>
-
-
-                            <!-- click dropdown -->
-                            <div class="sidebar-nav-item-drop">
-                                <ul>
-                                    <!-- drop li -->
-                                    <li class="drop-li">
-                                        <div class="sidebar-drop-item no-hover">
-                                            <ul class="my-flex-column my-gap-5">
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Chart of Accounts Report</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Cash/ Bank Receive and Payment Voucher Report</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Contra/ Journal Report</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Bill Receive Report</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Subsidiary Ledger Report</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Layer wise Trial Balance Report</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Schedule of Balance Sheet Report</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Balance Sheet Report</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Income Statement</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Voucher Cancel Report</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Voucher Edit Report</span>
-                                                    </a>
-                                                </li>
-                                                <li class="w-100">
-                                                    <div
-                                                        class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5 w-100">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Fixed Asset</span>
-                                                    </div>
-                                                    <ul class="w-100">
-                                                        <!-- drop li -->
-                                                        <li class="drop-li w-100">
-                                                            <div class="my-flex-between w-100">
-                                                                <div class="left">
-                                                                    <span>Fixed Asset </span>
-                                                                </div>
-                                                                <div class="icon my-fs-lg">
-                                                                    <i class="ri-arrow-down-s-fill"></i>
-                                                                </div>
-                                                            </div>
-
-                                                            <!-- inner click dropdown -->
-                                                            <ul class="inner-click-dropdown my-flex-column my-gap-5">
-                                                                <li>
-                                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                                        href="#">
-                                                                        <span class="icon">&rightarrow;</span>
-                                                                        <span> Fixed Asset Report</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                                        href="#">
-                                                                        <span class="icon">&rightarrow;</span>
-                                                                        <span> Disposal Report</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                                        href="#">
-                                                                        <span class="icon">&rightarrow;</span>
-                                                                        <span>Fixed Asset Service Gate Passspan>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-
-                        <!-- single nav li Attendance -->
-                        <li class="sidebar-nav-item-li my-w-100">
-                            <div class="sidebar-nav-item ">
-                                <div class="my-flex-center my-gap-10">
-                                    <img src="./images/sidebar Icons/attendant-list.png" alt="icon">
-                                    Attendance
-                                </div>
-                                <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
-                            </div>
-
-                            <!-- click dropdown -->
-                            <div class="sidebar-nav-item-drop">
-                                <ul>
-                                    <!-- drop li -->
-                                    <li class="drop-li">
-                                        <div class="sidebar-drop-item no-hover">
-                                            <ul class="my-flex-column my-gap-5">
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Attendance Database Synchronization</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Employee ID wise Manual Attendance</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Late Consideration</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Wrong/ Extra Punch Delete</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Holiday/ Calendar Setup</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Roster Setup</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Grace Period Setup</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Leave Entry</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Leave Setup</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Leave Opening Balance Entry</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-
-                        <!-- single nav li Payroll -->
-                        <li class="sidebar-nav-item-li my-w-100">
-                            <div class="sidebar-nav-item ">
-                                <div class="my-flex-center my-gap-10">
-                                    <img src="./images/sidebar Icons/payroll.png" alt="icon">
-                                    Payroll
-                                </div>
-                                <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
-                            </div>
-
-                            <!-- click dropdown -->
-                            <div class="sidebar-nav-item-drop">
-                                <ul>
-                                    <!-- drop li -->
-                                    <li class="drop-li">
-                                        <div class="sidebar-drop-item no-hover">
-                                            <ul class="my-flex-column my-gap-5">
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Salary Making (Single ID)</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Salary Making</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Arrear / Allowance Entry</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Deduction Entry</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>PF Loan Issue</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> PF Loan Adjustment (Monthly Salary)</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>PF Loan Cash Adjustment</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>PF Loan Closing Entry</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Provident Fund Setup</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Provident Fund Closing Entry</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Over Time Entry</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Over Time Entry</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Extra Duty Entry</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Bonus Entry</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Event/ Extra Bonus Entry</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <!-- single nav li sms email -->
-                        <li class="sidebar-nav-item-li my-w-100">
-                            <div class="sidebar-nav-item ">
-                                <div class="my-flex-center my-gap-10">
-                                    <img src="./images/sidebar Icons/email.png" alt="icon">
-                                    Email/SMS
-                                </div>
-                                <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
-                            </div>
-
-                            <!-- click dropdown -->
-                            <div class="sidebar-nav-item-drop">
-                                <ul>
-                                    <!-- drop li -->
-                                    <li class="drop-li">
-                                        <div class="sidebar-drop-item no-hover">
-                                            <ul class="my-flex-column my-gap-5">
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Invoice SMS</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Payment Receive SMS</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Invoice Correction / Edit SMS</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Voucher Correction / Edit SMS</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Birthday SMS</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span> Anniversary SMS</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Monthly Bill SMS</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>1st Reminder SMS</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>2nd Reminder SMS</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Posting SMS</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Limit Cross SMS</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Invoice Email</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Payment Receive Email</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
-                                                        href="#">
-                                                        <span class="icon">&rightarrow;</span>
-                                                        <span>Monthly Bill Email</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </li>
-
-
-                        <!-- single nav li -->
-                        <li class="sidebar-nav-item-li my-w-100">
-                            <a class="sidebar-nav-item " href="#">
-                                <div class="my-flex-center my-gap-10">
-                                    <img src="./images/sidebar Icons/report.png" alt="icon">
-                                    Reports
-                                </div>
-                                <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
-                            </a>
-                        </li>
-                        <!-- single nav li -->
-                        <li class="sidebar-nav-item-li my-w-100">
-                            <a class="sidebar-nav-item " href="#">
-                                <div class="my-flex-center my-gap-10">
-                                    <img src="./images/sidebar Icons/settings.png" alt="icon">
-                                    Setting
-                                </div>
-                                <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
-                            </a>
-                        </li>
-                        <!-- single nav li -->
-                        <li class="sidebar-nav-item-li my-w-100">
-                            <a class="sidebar-nav-item " href="#">
-                                <div class="my-flex-center my-gap-10">
-                                    <img src="./images/sidebar Icons/support-ticket.png" alt="icon">
-                                    Support Ticket
-                                </div>
-                                <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
-                            </a>
-                        </li>
-                        <!-- single nav li -->
-                        <li class="sidebar-nav-item-li my-w-100">
-                            <a class="sidebar-nav-item " href="#">
-                                <div class="my-flex-center my-gap-10">
-                                    <img src="./images/sidebar Icons/log-out.png" alt="icon">
-                                    Log Out
-                                </div>
-                                <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
-                            </a>
-                        </li>
-
                     </ul>
                 </div>
+
+                </li>
+
+                <!-- single nav li Reservation -->
+                <li class="sidebar-nav-item-li my-w-100">
+                    <div class="sidebar-nav-item ">
+                        <div class="my-flex-center my-gap-10">
+                            <img src="./images/sidebar Icons/reservation.png" alt="icon">
+                            Reservation
+                        </div>
+                        <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
+                    </div>
+
+                    <!-- click dropdown -->
+                    <div class="sidebar-nav-item-drop">
+                        <ul>
+                            <!-- drop li -->
+                            <li class="drop-li">
+                                <div class="sidebar-drop-item no-hover">
+                                    <ul class="my-flex-column my-gap-5">
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Guest House Room Booking/ Reservation</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Booking/ Reservation</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Guest House Sale</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Booking/ Reservation wise Check-out</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Allow Triple (Cash Card/ Credit Card/ Account) Mode of
+                                                    Payment Sale</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Guest Information Entry</span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+
+                <!-- single nav li Cash Cards -->
+                <li class="sidebar-nav-item-li my-w-100">
+                    <div class="sidebar-nav-item ">
+                        <div class="my-flex-center my-gap-10">
+                            <img src="./images/sidebar Icons/cash.png" alt="icon">
+                            Cash Cards
+                        </div>
+                        <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
+                    </div>
+
+                    <!-- click dropdown -->
+                    <div class="sidebar-nav-item-drop">
+                        <ul>
+                            <!-- drop li -->
+                            <li class="drop-li">
+                                <div class="sidebar-drop-item no-hover">
+                                    <ul class="my-flex-column my-gap-5">
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Smart Card Entry (Member)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Smart Card Entry (Spouse)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Smart Card Entry (Children)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Smart Card Entry (Guest)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Bar Sale</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Smart Card Block</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Smart Card Balance Transfer</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Cash Card Refill</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Cash Card Return</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Recharge Statement Department</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Recharge Details Department </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Recharge Summary Department</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> User wise Cash Deposit Statement</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Duration Wise Cash Card Statement</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                </li>
+
+
+                <!-- single nav li MIS/CRM -->
+                <li class="sidebar-nav-item-li my-w-100">
+                    <div class="sidebar-nav-item ">
+                        <div class="my-flex-center my-gap-10">
+                            <img src="./images/sidebar Icons/crm.png" alt="icon">
+                            MIS/CRM
+                        </div>
+                        <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
+                    </div>
+
+                    <!-- click dropdown -->
+                    <div class="sidebar-nav-item-drop">
+                        <ul>
+                            <!-- drop li -->
+                            <li class="drop-li">
+                                <div class="sidebar-drop-item no-hover">
+                                    <ul class="my-flex-column my-gap-5">
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Member Ledger</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Member Statement</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Monthly Bill – Single</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Monthly Bill - All</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Last 4 Month Due</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Member’s Summary (Month wise)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Member Balance with Details</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Member Balance – Single</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Member Balance - All</span>
+                                            </a>
+                                        </li>
+
+
+                                        <!-- drop li -->
+                                        <li class="drop-li w-100">
+                                            <div class="sidebar-drop-item ps-0">
+                                                <div class="my-flex-between w-100">
+                                                    <div class="left">
+                                                        <span>Multiple Category wise Member List</span>
+                                                    </div>
+                                                    <div class="icon my-fs-lg">
+                                                        <i class="ri-arrow-down-s-fill"></i>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Inner click dropdown -->
+                                                <ul class="inner-click-dropdown my-flex-column my-gap-5">
+                                                    <li>
+                                                        <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                            href="#">
+                                                            <span class="icon">&rightarrow;</span>
+                                                            <span>Basic Info</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                            href="#">
+                                                            <span class="icon">&rightarrow;</span>
+                                                            <span>Profession</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                            href="#">
+                                                            <span class="icon">&rightarrow;</span>
+                                                            <span>Category</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                            href="#">
+                                                            <span class="icon">&rightarrow;</span>
+                                                            <span>Location</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                            href="#">
+                                                            <span class="icon">&rightarrow;</span>
+                                                            <span>Gender</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                            href="#">
+                                                            <span class="icon">&rightarrow;</span>
+                                                            <span>City</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                            href="#">
+                                                            <span class="icon">&rightarrow;</span>
+                                                            <span>Other Club Member</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                            href="#">
+                                                            <span class="icon">&rightarrow;</span>
+                                                            <span>Religion</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                            href="#">
+                                                            <span class="icon">&rightarrow;</span>
+                                                            <span>Active/Inactive</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                            href="#">
+                                                            <span class="icon">&rightarrow;</span>
+                                                            <span>Membership Duration</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                            href="#">
+                                                            <span class="icon">&rightarrow;</span>
+                                                            <span>Category All</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                            href="#">
+                                                            <span class="icon">&rightarrow;</span>
+                                                            <span>Blood Group</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                            href="#">
+                                                            <span class="icon">&rightarrow;</span>
+                                                            <span>Credit Limit</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                            href="#">
+                                                            <span class="icon">&rightarrow;</span>
+                                                            <span>Expired</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                            href="#">
+                                                            <span class="icon">&rightarrow;</span>
+                                                            <span>Anniversary</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                            href="#">
+                                                            <span class="icon">&rightarrow;</span>
+                                                            <span>Spouse Birthday</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                            href="#">
+                                                            <span class="icon">&rightarrow;</span>
+                                                            <span>Address</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                            href="#">
+                                                            <span class="icon">&rightarrow;</span>
+                                                            <span>Letter Format</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                        </li>
+
+
+                                        <!-- singe page -->
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Provisional Voter List</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Voter List</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> 1st Reminder List</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Posting Letter</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Check List</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Check List</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Letter</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+
+                <!-- single nav li Account -->
+                <li class="sidebar-nav-item-li my-w-100">
+                    <div class="sidebar-nav-item ">
+                        <div class="my-flex-center my-gap-10">
+                            <img src="./images/sidebar Icons/account.png" alt="icon">
+                            Accounts
+                        </div>
+                        <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
+                    </div>
+
+
+                    <!-- click dropdown -->
+                    <div class="sidebar-nav-item-drop">
+                        <ul>
+                            <!-- drop li -->
+                            <li class="drop-li">
+                                <div class="sidebar-drop-item no-hover">
+                                    <ul class="my-flex-column my-gap-5">
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Chart of Accounts Report</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Cash/ Bank Receive and Payment Voucher Report</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Contra/ Journal Report</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Bill Receive Report</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Subsidiary Ledger Report</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Layer wise Trial Balance Report</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Schedule of Balance Sheet Report</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Balance Sheet Report</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Income Statement</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Voucher Cancel Report</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Voucher Edit Report</span>
+                                            </a>
+                                        </li>
+                                        <li class="w-100">
+                                            <div
+                                                class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5 w-100">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Fixed Asset</span>
+                                            </div>
+                                            <ul class="w-100">
+                                                <!-- drop li -->
+                                                <li class="drop-li w-100">
+                                                    <div class="my-flex-between w-100">
+                                                        <div class="left">
+                                                            <span>Fixed Asset </span>
+                                                        </div>
+                                                        <div class="icon my-fs-lg">
+                                                            <i class="ri-arrow-down-s-fill"></i>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- inner click dropdown -->
+                                                    <ul class="inner-click-dropdown my-flex-column my-gap-5">
+                                                        <li>
+                                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                                href="#">
+                                                                <span class="icon">&rightarrow;</span>
+                                                                <span> Fixed Asset Report</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                                href="#">
+                                                                <span class="icon">&rightarrow;</span>
+                                                                <span> Disposal Report</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                                href="#">
+                                                                <span class="icon">&rightarrow;</span>
+                                                                <span>Fixed Asset Service Gate Passspan>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+
+                <!-- single nav li Attendance -->
+                <li class="sidebar-nav-item-li my-w-100">
+                    <div class="sidebar-nav-item ">
+                        <div class="my-flex-center my-gap-10">
+                            <img src="./images/sidebar Icons/attendant-list.png" alt="icon">
+                            Attendance
+                        </div>
+                        <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
+                    </div>
+
+                    <!-- click dropdown -->
+                    <div class="sidebar-nav-item-drop">
+                        <ul>
+                            <!-- drop li -->
+                            <li class="drop-li">
+                                <div class="sidebar-drop-item no-hover">
+                                    <ul class="my-flex-column my-gap-5">
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Attendance Database Synchronization</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Employee ID wise Manual Attendance</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Late Consideration</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Wrong/ Extra Punch Delete</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Holiday/ Calendar Setup</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Roster Setup</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Grace Period Setup</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Leave Entry</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Leave Setup</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Leave Opening Balance Entry</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+
+                <!-- single nav li Payroll -->
+                <li class="sidebar-nav-item-li my-w-100">
+                    <div class="sidebar-nav-item ">
+                        <div class="my-flex-center my-gap-10">
+                            <img src="./images/sidebar Icons/payroll.png" alt="icon">
+                            Payroll
+                        </div>
+                        <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
+                    </div>
+
+                    <!-- click dropdown -->
+                    <div class="sidebar-nav-item-drop">
+                        <ul>
+                            <!-- drop li -->
+                            <li class="drop-li">
+                                <div class="sidebar-drop-item no-hover">
+                                    <ul class="my-flex-column my-gap-5">
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Salary Making (Single ID)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Salary Making</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Arrear / Allowance Entry</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Deduction Entry</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>PF Loan Issue</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> PF Loan Adjustment (Monthly Salary)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>PF Loan Cash Adjustment</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>PF Loan Closing Entry</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Provident Fund Setup</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Provident Fund Closing Entry</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Over Time Entry</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Over Time Entry</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Extra Duty Entry</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Bonus Entry</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Event/ Extra Bonus Entry</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- single nav li sms email -->
+                <li class="sidebar-nav-item-li my-w-100">
+                    <div class="sidebar-nav-item ">
+                        <div class="my-flex-center my-gap-10">
+                            <img src="./images/sidebar Icons/email.png" alt="icon">
+                            Email/SMS
+                        </div>
+                        <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
+                    </div>
+
+                    <!-- click dropdown -->
+                    <div class="sidebar-nav-item-drop">
+                        <ul>
+                            <!-- drop li -->
+                            <li class="drop-li">
+                                <div class="sidebar-drop-item no-hover">
+                                    <ul class="my-flex-column my-gap-5">
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Invoice SMS</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Payment Receive SMS</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Invoice Correction / Edit SMS</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Voucher Correction / Edit SMS</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Birthday SMS</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span> Anniversary SMS</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Monthly Bill SMS</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>1st Reminder SMS</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>2nd Reminder SMS</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Posting SMS</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Limit Cross SMS</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Invoice Email</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Payment Receive Email</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="inner-click-dropdown-a my-d-flex my-align-center my-gap-5"
+                                                href="#">
+                                                <span class="icon">&rightarrow;</span>
+                                                <span>Monthly Bill Email</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                </li>
+
+
+                <!-- single nav li -->
+                <li class="sidebar-nav-item-li my-w-100">
+                    <a class="sidebar-nav-item " href="#">
+                        <div class="my-flex-center my-gap-10">
+                            <img src="./images/sidebar Icons/report.png" alt="icon">
+                            Reports
+                        </div>
+                        <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
+                    </a>
+                </li>
+                <!-- single nav li -->
+                <li class="sidebar-nav-item-li my-w-100">
+                    <a class="sidebar-nav-item " href="#">
+                        <div class="my-flex-center my-gap-10">
+                            <img src="./images/sidebar Icons/settings.png" alt="icon">
+                            Setting
+                        </div>
+                        <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
+                    </a>
+                </li>
+                <!-- single nav li -->
+                <li class="sidebar-nav-item-li my-w-100">
+                    <a class="sidebar-nav-item " href="#">
+                        <div class="my-flex-center my-gap-10">
+                            <img src="./images/sidebar Icons/support-ticket.png" alt="icon">
+                            Support Ticket
+                        </div>
+                        <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
+                    </a>
+                </li>
+                <!-- single nav li -->
+                <li class="sidebar-nav-item-li my-w-100">
+                    <a class="sidebar-nav-item " href="#">
+                        <div class="my-flex-center my-gap-10">
+                            <img src="./images/sidebar Icons/log-out.png" alt="icon">
+                            Log Out
+                        </div>
+                        <span class="right-arrow"><i class="ri-arrow-right-s-fill"></i></span>
+                    </a>
+                </li>
+
+                </ul>
+            </div>
             </div>
         </aside>
 
