@@ -272,6 +272,16 @@ input[type="checkbox"]:focus {
     font-weight: var(--fw-500);
 }
 
+.btn-primary {
+    background-color: var(--title-icon-color);
+    color: var(--white);
+    border: transparent;
+}
+
+.btn-primary:hover {
+    background-color: var(--gold);
+}
+
 .my-btn-outline:hover {
     background-color: var(--gray-off);
 }
@@ -432,6 +442,10 @@ input[type="checkbox"]:focus {
 
 .my-bg-green {
     background-color: var(--green);
+}
+
+.my-bg-gold {
+    background-color: var(--gold) !important;
 }
 
 .my-bg-red {
