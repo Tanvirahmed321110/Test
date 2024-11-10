@@ -1,143 +1,3 @@
-/********************
-****    Header    ****
-********************/
-.my-header {
-    position: fixed;
-    top: 0;
-    left: 260px;
-    width: calc(100% - 260px);
-    height: 65px;
-    background-image: var(--gradient-1);
-    border-bottom: 1px solid #937e7e59;
-    z-index: 1050;
-    transition: .3s linear;
-}
-
-.my-header.active {
-    left: 0px;
-    width: 100%;
-}
-
-/* modal problems fixed */
-/* Modal backdrop */
-.modal-backdrop {
-    z-index: 1040 !important;
-}
-
-/* Modal itself */
-.modal {
-    z-index: 1055 !important;
-}
-
-/* Modal dialog */
-.modal-dialog {
-    z-index: 1060 !important;
-}
-
-/* Modal content */
-.modal-content {
-    z-index: 1065 !important;
-}
-
-
-.my-header .menu-btn {
-    transition: unset;
-}
-
-.my-header .menu-btn:hover {
-    background-color: var(--gray);
-}
-
-.my-header .menu-btn i {
-    transition: transform .25s linear;
-}
-
-.my-header .menu-btn:hover i {
-    transform: rotate(180deg);
-}
-
-.my-header .profile-image {
-    width: 54px;
-    height: 54px;
-    border-radius: 50%;
-    border: 1px solid rgba(125, 125, 125, 0.74);
-    padding: 2px;
-}
-
-
-/* Custom CSS to hide dropdown caret */
-.no-caret::after {
-    display: none;
-}
-
-/*_______  Notification  _________*/
-.notification-items .profile-image {
-    width: 48px;
-    height: 48px;
-}
-
-.my-dropdown.notification-dropdown {
-    width: 300px;
-}
-
-.my-header .notification-items li {
-    border-bottom: 1px solid var(--white-off);
-    position: relative;
-    padding: 0 15px;
-}
-
-
-/* animation and new base */
-.my-header .notification-items li .new {
-    position: absolute;
-    right: 2px;
-    top: 2px;
-    border-radius: 3px;
-    padding: 0px 4px;
-    color: var(--white);
-    background-color: var(--red);
-    font-size: var(--fs-xs);
-    animation: on-off 2s linear infinite alternate;
-    transform-origin: center
-}
-
-.my-header .notification-items li:hover {
-    background-color: var(--white-off);
-}
-
-/* scroll bar change color */
-.my-header .my-dropdown.my-has-scrollbar::-webkit-scrollbar-thumb {
-    background-color: var(--dark-gray);
-}
-
-.my-header .my-dropdown.my-has-scrollbar:hover::-webkit-scrollbar {
-    width: 6px;
-}
-
-/* notification base */
-.base {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    margin-top: -16px;
-    margin-left: 30px;
-    background-color: var(--red);
-    color: var(--white);
-    font-size: 12px;
-    animation: top-down .5s ease-in-out infinite;
-}
-
-.my-dropdown .my-flex-column {
-    align-items: flex-start !important;
-    justify-content: flex-start !important;
-}
-
-
-
-
-
-
 /**********************
 ****    Main Body  ****
 **********************/
@@ -190,7 +50,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .body-top .my-card .my-sub-title {
-    color: var(--gray);
+    color: var(--gold);
 }
 
 
@@ -211,8 +71,12 @@ body::-webkit-scrollbar-thumb {
 .body-top .my-card:hover {
     transition: .2s ease-in-out;
     transform: translateY(8px);
-    background-color: var(--purple);
-    color: var(--white-off2);
+    background-color: var(--dark);
+    /* color: var(--white-off2); */
+}
+
+.body-top .my-card:hover .content .my-text-purple {
+    color: var(--white-off3);
 }
 
 .body-top .my-card:hover .my-sub-title {
@@ -227,21 +91,30 @@ body::-webkit-scrollbar-thumb {
 
 .body-top-down .my-card {
     padding: 30px 12px;
-    transition: .5s;
+    transition: .3s linear;
     box-shadow: var(--shadow-2);
     border-radius: 10px;
+    background-color: var(--navy);
 }
 
+.body-top-down .my-card .content {
+    color: var(--gray-off);
+    color: var(--gray-off);
+}
+
+.body-top-down .my-card .my-sub-title {
+    color: var(--title-icon-color);
+}
 
 .body-top-down .my-card:hover {
-    background-color: var(--white);
+    background-color: var(--purple);
     color: var(--gray);
     transform: scale(.96);
-    transition: .5s;
+    transition: .3s linear;
 }
 
 .body-top-down .my-card:hover .my-sub-title {
-    color: var(--red);
+    color: var(--title-icon-color);
 }
 
 
