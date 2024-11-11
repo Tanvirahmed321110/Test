@@ -149,7 +149,7 @@ body::-webkit-scrollbar-thumb {
 
 /* my-common-table */
 .my-common-table {
-    max-width: 1200px;
+    max-width: calc(100%);
     overflow: auto;
     max-height: 500px;
     padding: 25px 0;
@@ -168,15 +168,8 @@ body::-webkit-scrollbar-thumb {
     border-collapse: collapse;
 }
 
-.my-common-table table tr:nth-child(even) {
-    /* background-color: var(--white-off); */
-}
 
-.my-common-table table tr {
-    /* display: grid; */
-    /* grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); */
-    width: 100%;
-}
+
 
 
 .my-common-table .action {

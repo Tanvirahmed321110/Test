@@ -1,8 +1,8 @@
 .login-page {
     height: 100dvh;
     width: 100%;
-    /* background-color: var(--white); */
-    background-image: url('https://www.arquitecturabd.com/wp-content/uploads/2019/01/Feature-Image_DHAKA-CLUB.jpg');
+    /* background-image: url('https://www.arquitecturabd.com/wp-content/uploads/2019/01/Feature-Image_DHAKA-CLUB.jpg'); */
+    background-image: url('../../images/gulsan-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -50,7 +50,7 @@
 }
 
 .login-area .head img {
-    width: 180px;
+    width: 150px;
     margin-bottom: 15px;
 }
 
